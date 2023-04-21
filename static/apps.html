@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Classes </title>
+    <title>Classes</title>
     <link href="assets/images/branding/favicon/favicon.png" rel="icon" type="image/x-icon" />
-    <link href="assets/css/particles.css" rel="stylesheet">
     <!-- Main Scripts-->
-  
-    <script src="assets/js/main.js"></script>
+    <script src="resources/js/go.js"></script>
+    <script src="resources/js/visit.js"></script>
     <script src="./uv/uv.bundle.js"></script>
     <script src="./uv/uv.config.js"></script>
+    <link href="assets/css/particles.css" rel="stylesheet">
+    <!-- Extra Scripts-->
     <script src="assets/js/panic.js"></script>
     <script src="assets/js/search.js"></script>
-    <script src="resources/js/go.js"></script>
     <script src="/assets/js/themecontrol.js"></script>
     <link href="assets/css/settings/main.css" rel="stylesheet" />
     <link href="assets/css/nav.css" rel="stylesheet" />
@@ -19,19 +19,18 @@
     <link href="assets/css/searchbar.css" rel="stylesheet" />
     <meta content="The best math tutoring!" name="description" />
     <link href="assets/images/branding/favicon/interstellar.png" rel="shortcut icon" type="image/x-icon" />
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-WKJQ5QHQTJ");
-    </script>
-    </link>
+  gtag('config', 'G-WKJQ5QHQTJ');
+</script>
   </head>
   <body>
+    <!-- Nav Bar-->
     <div class="header2">
       <br />
       <a class="logo" href="/../"> Interstellar </a>
@@ -122,7 +121,17 @@
           <a class="game" onclick="go('https://discord.com')">
             <img loading="lazy" src="/assets/images/icons/apps/discord.jpg" style="border-radius: 25px;" />
           </a>
-          <p3> Discord </p3>
+          <p3>Discord</p3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span1">
+        <div class="card animals" loading="lazy">
+          <a class="game" onclick="visit('https://discord.com')">
+            <img loading="lazy" src="/assets/images/icons/apps/discord.jpg" style="border-radius: 25px;" />
+          </a>
+          <p3> Discord - Login</p3>
         </div>
       </div>
     </div>

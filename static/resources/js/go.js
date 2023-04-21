@@ -9,16 +9,8 @@ function go(value) {
       if (!isUrl(url)) url = "https://www.google.com/search?q=" + url;
       else if (!(url.startsWith("https://") || url.startsWith("http://")))
         url = "https://" + url;
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-
+      //pass the encoded url to the second page
+      sessionStorage.setItem("encodedUrl", __uv$config.encodeUrl(url));
+      location.href = "go.html";
     });
-}
-
-function isUrl(val = "") {
-  if (
-    /^http(s?):\/\//.test(val) ||
-    (val.includes(".") && val.substr(0, 1) !== " ")
-  )
-    return true;
-  return false;
 }
