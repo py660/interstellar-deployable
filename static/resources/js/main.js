@@ -24,7 +24,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         link.rel = "icon";
         link.href = icon;
         
-        iframe.src = location.href + "main.html"
+        iframe.src = location.href 
         style.position = "fixed"
         style.top = style.bottom = style.left = style.right = 0
         style.border = style.outline = "none"
@@ -35,10 +35,3 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         location.replace("https://google.com")
     }
 }
-
-// GoGuardian Bypass
-
-window.addEventListener('beforeunload', function(e) {
-    e.preventDefault();
-    e.returnValue = 'Are you sure you want to leave?';
-});

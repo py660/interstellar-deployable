@@ -4,10 +4,11 @@
     <title>Classes</title>
     <link href="assets/images/branding/favicon/favicon.png" rel="icon" type="image/x-icon" />
     <!-- Main Scripts-->
-    <script src="resources/js/go.js"></script>
-    <script src="resources/js/visit.js"></script>
+     <script src="resources/js/index.js"></script>
     <script src="./uv/uv.bundle.js"></script>
     <script src="./uv/uv.config.js"></script>
+    <script src="resources/js/visit.js"></script>
+    <script src="resources/js/go.js"></script>
     <link href="assets/css/particles.css" rel="stylesheet">
     <!-- Extra Scripts-->
     <script src="assets/js/panic.js"></script>
@@ -50,6 +51,8 @@
     <div>
       <input class="searchbar" id="searchbar" name="search" onkeyup="search_animal()" placeholder="Search.." tag="searchbar" type="text" />
     </div>
+    <br>
+    <h2>If nothing is working press Ctrl + Shift + R</h2>
     <script>
       const searchbar = document.getElementById("searchbar");
       searchbar.addEventListener("input", function() {
@@ -65,16 +68,6 @@
       });
     </script>
     <br />
-    <div class="row">
-      <div class="span1">
-        <div class="card animals" loading="lazy">
-          <a class="game" onclick="go('https://9anime.to')">
-            <img loading="lazy" src="/assets/images/icons/apps/9anime.png" style="border-radius: 25px;" />
-          </a>
-          <p3> 9Anime </p3>
-        </div>
-      </div>
-    </div>
     <div class="row">
       <div class="span1">
         <div class="card animals" loading="lazy">
@@ -101,7 +94,7 @@
           <a onclick="go('https://chatgptproxy.me')">
             <img loading="lazy" src="/assets/images/icons/chatgpt.png" style="border-radius: 25px;" />
           </a>
-          <p3> ChatGPT Proxy </p3>
+          <p3>ChatGPT</p3>
         </div>
       </div>
     </div>
@@ -122,16 +115,6 @@
             <img loading="lazy" src="/assets/images/icons/apps/discord.jpg" style="border-radius: 25px;" />
           </a>
           <p3>Discord</p3>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span1">
-        <div class="card animals" loading="lazy">
-          <a class="game" onclick="visit('https://discord.com')">
-            <img loading="lazy" src="/assets/images/icons/apps/discord.jpg" style="border-radius: 25px;" />
-          </a>
-          <p3> Discord - Login</p3>
         </div>
       </div>
     </div>
