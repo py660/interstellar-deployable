@@ -11,7 +11,8 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
     const popup = open("about:blank", "_blank")
     if (!popup || popup.closed) {
         alert("Allow popups and redirects to hide this from showing up in your history.\n\nCHANGE 2023")
-        window.location.replace("data:text/html;,<h1>403 Forbidden</h1><p>You must enable this feature to access this site.</p>")
+        document.write("<h1>403 Forbidden</h1><p>You must enable this feature to access this site.</p>")
+        history.replaceState({}, "", "/404.html")
     } else {
         const doc = popup.document
         const iframe = doc.createElement("iframe")
